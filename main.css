@@ -1,0 +1,28 @@
+.header-container {
+  background-color: #1f2937;
+  height: 250px;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+.navbar-container .logo {
+  flex: 1;
+}
+
+.navbar-container .link {
+}
