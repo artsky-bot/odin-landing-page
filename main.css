@@ -1,14 +1,25 @@
-.header-container {
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  font-weight: bolder;
+}
+
+.hero-container {
   background-color: #1f2937;
   height: 250px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 25px;
 }
 
 .navbar-container {
   display: flex;
   align-items: center;
   color: white;
-  margin-left: 10%;
-  margin-right: 10%;
+  font-family: "Arial", sans-serif;
 }
 
 body {
@@ -18,11 +29,15 @@ body {
 h1,
 h2 {
   margin: 0;
+  font-weight: 100;
 }
 
 .navbar-container .logo {
+  font-weight: 900;
   flex: 1;
 }
 
-.navbar-container .link {
+.navbar-container > a {
+  font-weight: 100;
+  text-align: center;
 }
