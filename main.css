@@ -1,18 +1,9 @@
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:hover {
-  font-weight: bolder;
-}
-
 .hero-container {
   background-color: #1f2937;
   height: 250px;
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 25px;
+  padding-top: 20px;
 }
 
 .navbar-container {
@@ -20,16 +11,8 @@ a:hover {
   align-items: center;
   color: white;
   font-family: "Arial", sans-serif;
-}
-
-body {
-  margin: 0;
-}
-
-h1,
-h2 {
-  margin: 0;
-  font-weight: 100;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .navbar-container .logo {
@@ -37,7 +20,30 @@ h2 {
   flex: 1;
 }
 
-.navbar-container > a {
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover .link {
+  -webkit-text-stroke: 1px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links .link {
   font-weight: 100;
-  text-align: center;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+.logo,
+.link {
+  margin: 0;
 }
