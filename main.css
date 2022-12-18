@@ -1,6 +1,9 @@
+html {
+  font-family: "Arial", sans-serif;
+}
+
 body {
   margin: 0;
-  font-family: "Arial", sans-serif;
 }
 
 .container {
@@ -114,8 +117,23 @@ a:hover .link-text {
   color: #e5e7eb;
 }
 
+#info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#info-subsection {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: fit-content (1000px);
+}
+
 #info-item {
-  display: inline-block;
   width: min-content;
 }
 
@@ -129,4 +147,10 @@ a:hover .link-text {
 #info-title {
   font-size: 36px;
   -webkit-text-stroke: 1px;
+}
+
+@media screen and (max-width: 500px) {
+  #info-subsection {
+    justify-content: center;
+  }
 }
